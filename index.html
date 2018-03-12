@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Zodiac</title>
+
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+</head>
+
+<body>
+<header>
+<!-- Header starts here -->
+  <div id="header">
+    <div id="question">
+      <h1>Discover what tree your astrology associates with:</h1>
+    </div>
+    <!-- Form starts here -->
+      <div id="form_container">
+        <form id="form" onsubmit="return calZodiac();">
+          <input id="birthdateEntry" type="date" name="First Name">
+          <input id="enter" type="submit" name="Submit" value="Submit">
+        </form>
+      </div>
+    <!-- Form ends here -->
+  </div>
+<!-- Header ends here -->
+</header>
+
+<main>
+<!-- Results starts here -->
+  <div id="resultsWrapper">
+    <div id="resultPlaceholder">
+      <p><i>Enter your birthdate and press 'Submit' to discover what tree you astrological sign is related to.</i></p>
+    </div>
+
+    <div class="treeResult">
+      <div class="treeResultImage">
+        <img src="content/spruce.png" alt="Spruce">
+      </div>
+      <div class="treeResultInfo">
+        <h2>Spruce</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+    <div class="treeResult">
+      <img src="content/pine.png" alt="Pine">
+      <div class="treeResultInfo">
+        <h2>Pine</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+    <div class="treeResult">
+      <img src="content/oak.png" alt="Oak">
+      <div class="treeResultInfo">
+        <h2>Oak</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+   </div>
+    <div class="treeResult">
+      <img src="content/redwood.png" alt="Redwood">
+      <div class="treeResultInfo">
+        <h2>Redwood</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+    <div class="treeResult">
+      <div class="tree-image">
+        <img src=" content/results/sequoia_result.jpg" alt="Sequoia">
+      </div>
+      <div class="treeResultInfo">
+        <h2>Sequoia</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+    <div class="treeResult">
+      <img src=" content/palm.png" alt="Palm">
+      <div class="treeResultInfo">
+        <h2>Palm</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+    <div class="treeResult">
+      <img src="content/chestnut.png" alt="Chestnut">
+      <div class="treeResultInfo">
+        <h2>Chestnut</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    </div>
+    <div class="treeResult">
+      <img src="content/weepingwillow.png" alt="Weeping Willow">
+      <div class="treeResultInfo">
+        <h2>Weeping Willow</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+    <div class="treeResult">
+      <img src="content/maple.png" alt="Maple">
+      <div class="treeResultInfo">
+        <h2>Redwood</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+    <div class="treeResult">
+      <img src="content/birch.png" alt="Birch">
+      <div class="treeResultInfo">
+        <h2>Birch</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+    <div class="treeResult">
+      <img src="content/cedar.png" alt="Cedar">
+      <div class="treeResultInfo">
+        <h2>Cedar</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+    <div class="treeResult">
+      <img src="content/baobab.png" alt="Baobab">
+      <div class="treeResultInfo">
+        <h2>Baobab</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+  </div>
+<!-- Results ends here -->
+
+<!-- Trees starts here -->
+  <div id="trees">
+    <div class="i_tree" id="spruceButton">
+      <figure>
+        <img src="content/spruce.png" alt="Spruce">
+        <figcaption>Spruce</figcaption>
+      </figure>
+    </div>
+    <div class="i_tree" id="pineButton">
+      <figure>
+        <img src="content/pine.png" alt="Pine">
+        <figcaption>Pine</figcaption>
+      </figure>
+    </div>
+    <div class="i_tree" id="oakButton">
+      <figure>
+        <img src="content/oak.png" alt="Oak">
+        <figcaption>Oak</figcaption>
+      </figure>
+    </div>
+    <div class="i_tree" id="redwoodButton">
+      <figure>
+        <img src="content/redwood.png" alt="Redwood">
+        <figcaption>Redwood</figcaption>
+      </figure>
+    </div>
+    <div class="i_tree" id="sequoiaButton">
+      <figure>
+        <img src=" content/sequoia.png" alt="Sequoia">
+        <figcaption>Sequoia</figcaption>
+      </figure>
+    </div>
+    <div class="i_tree" id="palmButton">
+      <figure>
+        <img src=" content/palm.png" alt="Palm">
+        <figcaption>Palm</figcaption>
+      </figure>
+    </div>
+    <div class="i_tree" id="chestnutButton">
+      <figure>
+        <img src="content/chestnut.png" alt="Chestnut">
+        <figcaption>Chestnut</figcaption>
+      </figure>
+    </div>
+    <div class="i_tree" id="weepingwillowButton">
+      <figure>
+        <img src="content/weepingwillow.png" alt="Weeping Willow">
+        <figcaption>Weeping Willow</figcaption>
+      </figure>
+    </div>
+    <div class="i_tree" id="mapleButton">
+      <figure>
+        <img src="content/maple.png" alt="Maple">
+        <figcaption>Maple</figcaption>
+      </figure>
+    </div>
+    <div class="i_tree" id="birchButton">
+      <figure>
+        <img src="content/birch.png" alt="Birch">
+        <figcaption>Birch</figcaption>
+      </figure>
+    </div>
+    <div class="i_tree" id="cedarButton">
+      <figure>
+        <img src="content/cedar.png" alt="Cedar">
+        <figcaption>Cedar</figcaption>
+      </figure>
+    </div>
+    <div class="i_tree" id="baobabButton">
+      <figure>
+        <img src="content/baobab.png" alt="Baobab">
+        <figcaption>Baobab</figcaption>
+      </figure>
+    </div>
+  </div>
+<!-- Trees ends here -->
+</main>
+
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
